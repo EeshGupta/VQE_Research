@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {1}Fast Fourier Transform}{1}%
+\contentsline {section}{\numberline {2}Fast Fourier Transform}{2}%
+\contentsline {subsection}{\numberline {2.1}Representing a Polynomial}{2}%
+\contentsline {subsection}{\numberline {2.2}Complex Roots of Unity}{3}%
+\contentsline {subsection}{\numberline {2.3}Evaluation}{4}%
+\contentsline {subsection}{\numberline {2.4}Summary}{6}%
+\contentsline {section}{\numberline {3}Quantum Fourier Transform}{6}%
+\contentsline {subsection}{\numberline {3.1}Parallels to Fast Fourier Transform}{6}%
+\contentsline {subsection}{\numberline {3.2}Reverse Fast Fourier Transform}{7}%
+\contentsline {subsection}{\numberline {3.3}Reordering columns}{7}%
+\contentsline {subsection}{\numberline {3.4}Phase Corrections}{7}%
+\contentsline {subsubsection}{\numberline {3.4.1}A Brief Look at Controlled Phase Gates}{8}%
+\contentsline {subsubsection}{\numberline {3.4.2}Hadamard Gate}{8}%
+\contentsline {subsubsection}{\numberline {3.4.3}Phase Gates}{9}%
+\contentsline {subsubsection}{\numberline {3.4.4}Repeat}{10}%
+\contentsline {subsubsection}{\numberline {3.4.5}Last Repeat}{11}%
+\contentsline {subsection}{\numberline {3.5}Conclusion}{11}%

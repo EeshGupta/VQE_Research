@@ -1,0 +1,8 @@
+PWD C:/Users/Eesh Gupta/Documents/Spring2020/Quant_Comp
+INPUT c:/texlive/2019/texmf.cnf
+INPUT c:/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT lolol.tex
+OUTPUT lolol.log
+INPUT c:/texlive/2019/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/setspace/setspace.sty

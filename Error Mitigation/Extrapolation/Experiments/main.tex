@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{physics}
+\usepackage{comment}
+\usepackage{mathtools}
+\newcommand{\om}{\omega_n}
+\newcommand{\adag}{a^\dagger}
+\newcommand\Chi{\mathrm{X}}
+\newtheorem{problem}{Problem}
+\title{Extrapolation Experiments}
+\author{Eesh Gupta}
+\begin{document}
+\maketitle
+In this document, we will aim to perform VQE experiments on
+Hydrogen molecule \(H_2\) and Lithium Hydride \(LiH\) using extrapolation.
+Extrapolation is an error mitigation strategy that aims to better the results
+by deliberately increasing the noise rate. It has been successfully deployed
+on the above mentioned molecules. Our aim here is to reproduce those
+experiments on simulators if not real quantum devices.
+
+To get there, we will perform simpler experiments first, each of which give us
+a particular insight/tool to solve the larger problem.
+
+\section{Preliminary experiments}
+\textit{Questions to consider:
+\begin{itemize}
+  \item How do we ``rescale'' noise in a quantum circuit with only 1 qubit and 1 gate?
+  \item Can  we extrapolate up to 2 order of magnitude and get better results?
+\end{itemize}
+}
+\section{Single Qubit Clifford Gates}
+\textit{Questions to consider:
+\begin{itemize}
+  \item How do we ``rescale'' noise given that our 1 qubit circuit contains multiple single qubit gates?
+  \item Can we extrapolate it to at least 2 orders of magnitude and get better
+  results?
+\end{itemize}
+}
+\section{Multi Qubit Clifford Gates}
+\textit{Questions to consider:
+\begin{itemize}
+  \item How do we ``rescale'' with both single and multi qubit gates?
+  \item Can we extrapolate it to at least 2 orders of magnitude and get better
+  results?
+\end{itemize}
+}
+\section{Hydrogen Molecule}
+\textit{Questions to consider:
+\begin{itemize}
+  \item How do we ``rescale'' with both single and multi qubit gates?
+  \item Can we extrapolate it to at least 2 orders of magnitude and get better
+  results?
+\end{itemize}
+}
+\section{Lithium Hydride}
+\textit{Questions to consider:
+\begin{itemize}
+
+\end{itemize}
+}
+
+\end{document}

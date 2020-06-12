@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Background}{2}%
+\contentsline {subsection}{\numberline {1.1}Richardson Extrapolation}{2}%
+\contentsline {section}{\numberline {2}Extrapolating Noise via Rescaling Time}{3}%
+\contentsline {subsection}{\numberline {2.1}Series Expansion in Noise Parameter}{3}%
+\contentsline {subsection}{\numberline {2.2}Experimental Rescaling of the noise parameter}{3}%
+\contentsline {subsection}{\numberline {2.3}Error bounds on the noise free parameter}{4}%
+\contentsline {section}{\numberline {3}Extrapolating Noise via Pauli Gates}{5}%
+\contentsline {subsection}{\numberline {3.1}Stochastic vs Non stochastic noise}{5}%
+\contentsline {subsection}{\numberline {3.2}Reformulating Extrapolation}{6}%
+\contentsline {subsection}{\numberline {3.3}Pauli Twirling}{6}%
+\contentsline {subsection}{\numberline {3.4}Noise Amplification}{6}%

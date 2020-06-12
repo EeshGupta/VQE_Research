@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{physics}
+\usepackage{comment}
+\usepackage{mathtools}
+\newcommand{\om}{\omega_n}
+\newcommand{\adag}{a^\dagger}
+\newcommand\Chi{\mathrm{X}}
+\newtheorem{problem}{Problem}
+\title{Questions So Far}
+\author{Eesh Gupta}
+\begin{document}
+\maketitle
+
+\section{Properties of Quantum Operations/Quantum Maps}
+
+\textbf{Question}: What is the physical interpretation of non-trace preserving
+quantum operations? Why are such operations said to ``not give a
+complete description of the system''?
+
+\noindent \textbf{Background:}
+
+
+Quantum operations \(\mathcal{E}(\rho)\) (where \(\rho\) is the
+state of the principal system and \(\mathcal{E}\) is quantum map)
+ are said to have the following properties:
+ \begin{enumerate}
+   \item \(\mathcal{E}\) is a convex linear map. That is, if \(\rho\) can
+   be decomposed as \(\sum_i p_i\rho_i\) where \(\{p_i\}\) are probailities,
+   then
+   \[\mathcal{E}(\sum_i p_i\rho_i) = \sum_i p_i\mathcal{E}(\rho_i)\]
+
+   \item \(\mathcal{E}\) may or may not preserve the trace of density matrix \(\rho\).
+
+
+   \[0 \leq tr(\mathcal{E}(\rho)) \leq 1\]
+   Here \(tr(\mathcal{E}(\rho))\) is decribed as ``the probability that the process represented by \(\mathcal{E}\) occurs when \(\rho\) is the initial state'' in Nielsen and Chuang. 
+   \item \(\mathcal{E}\) is completely positive. That is, \(\mathcal{E}(A)\) is
+   a positive operator for any positive operator \(A\).
+
+ \end{enumerate}
+
+The first property seems like a variant of the linearity principle.
+The third property seems to ensure that probabilities are
+non-negative. This is explained as follows.
+
+ Let's say we have a density matrix \(\rho_A\) that can be expanded in term of
+ an orthogonal basis states \(\{\ket{\psi}\}\),
+ \[\rho_A = \sum_i p_i\ket{\psi}\bra{\psi}\]
+ where \(p_i\) is the probability of system \(A\) to be in state \(\ket{\psi}\).
+ Since probabilities \(p_i\) are the eigenvalues of \(\rho\) is this basis, then
+ positivity ensures that all probabilities are non-negative (\(p_i\geq 0\)).
+
+
+ Now lets say \(A\) is part of a larger system \(A+B\) and we would like to
+ act on system \(A\) with the transpose operation \(T\). While \(T\) is
+ positive map, \(T \otimes \mathbb{I}_B\) is not a positive map. So there are
+ some operators which are positive when a subsystem is isolated but nonpositive
+ if the subsystem is part of some larger system. Thus, we need to add the condition
+ of \textit{completeness} to make sure our ``subsystem operators'' are always
+ positive, even when the susbsytem is not isolated.
+
+ \section{Markovian Processes}
+ \subsection{Markovian and Stochastic Noise}
+ In my readings of open quantum systems and error mitigation schemes, I am coming across the terms ``markovian'' and ``stochastic'' which
+ describe quantum noise. I want to clarify what these terms mean and
+ why are such distinctions necessary.
+
+ \noindent What I have found:
+
+ \noindent \textit{Markovian processes} are those in which how the system evolves in the
+ next moment only depends on its current state. \textit{We don't have to worry about the whole history of the system to determine its evolution?}
+
+ \noindent \textit{Stochastic process} is a random process. In terms of noise, some quantum errors may be too complicated to model and thus are assumed as random. Stochastic errors were also decribed as ``errors
+ that happen with little probability'' in a talk online. I am not sure how accurate these descriptions are.
+
+
+ \subsection{Master Equation}
+ In deriving the master equation, I am coming across the Markov Approximation which says:
+
+Suppose environment $E$ and system $S$ interact and exchange some energy with each other. Then $E$ would recover back to thermal equilibrium faster than $S$ because $E$ is much larger than $S$. Due to this, from the point of view of system $S$, the state of the environment seems to be constant in time i.e.
+$$\rho_{SE}(t) = \rho_{S}(t) \otimes\rho_E(0)$$
+where $\rho_{SE}(t)$ is the combined system-environment state as a function of time and $\rho_E(0)$ is the initial state of the environment. Moreover, since environment is quick to recover from any energy exchange than the system, the interaction or the coupling between the system and the environment is deemed ``weak''.
+
+I have 2 questions about this approximation:
+\begin{enumerate}
+ \item \textbf{Why does $E$ being large mean that its correlation time is very short?} It makes sense that if environment loses or gains energy, then the effect of change on the total energy of environment will be little. But its not clear why that entails that the relaxation time of environment is smaller than that of the system.
+ \item \textbf{Why does the quick recovery of environment make the interaction ``weak''?}If this is true, then realistically we can never design systems that are strongly coupled to the environment. This is because we would then need a system as large as environment and designing such system is impossible.
+\end{enumerate}
+
+\end{document}

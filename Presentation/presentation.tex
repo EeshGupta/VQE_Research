@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{comment}
+\newcommand{\om}{\omega_n}
+\title{Quantum Fourier Transform}
+\author{Eesh Gupta }
+\date{December 23rd 2019}
+\begin{document}
+\maketitle
+
+\textbf{\textit{Why UCCSD? }}
+
+A key requirement of quantum gates is that they “preserve the norm” when acting on states i.e. they are unitary. The coupled cluster opertor \(e^T\) by
+itself is not unitary. To make it unitary, we have to introduce \(T^{\dagger}\).
+\[ U(\vec{t}) = e^{T-T^{\dagger}} = e^{\sum_j t_j(\tau_j -\tau_j^{\dagger})}\]
+Here \(\tau_j\) are the excitation operators and \(t_j\) are the corresponding cluster amplitudes.
+
+\textbf{\textit{How do we map this operator \(e^{T-T^{\dagger}}\) to quantum gates?}}
+
+Recall that encoding methods were evaluated based on their efficiency in performing ``electronic
+operations''. Well the excitation operators of the
+form \(\tau_j -\tau_j^{\dagger}\) are really a bunch of creation and annhilation operators.
+In the JW mapping or the BK mapping, these turn out to be simply a linear combination of
+pauli matrices. But isn't \(\tau_j -\tau_j^{\dagger}\) enclosed within an exponential i.e
+\(e^{\tau_j -\tau_j^{\dagger}}\)? Well there are quantum algorithms to convert the
+``exponentiation of pauli matrices'' into much simpler rotation and CNOT gates.
+
+
+
+\[\Psi_{CISD} = (1 + T_1 + T_2)\Phi_0 = \Phi_0 + T_1\Phi_0 + T_2\Phi_0\]
+
+\[\Psi_{CCSD} = e^{T_1 + T_2}\Phi_0 = \Phi_0 + T_1\Phi_0 + (T_1^2 + T_2)\Phi_0 + (T_1T_2 + T_1^3)\Phi_0 + ...\]
+
+\[\ket{11}\]
+
+  \[a_{i}a_j + a_{j}a_i = 0\]
+  \[a^{\dagger}_{i}a^{\dagger}_j + a^{\dagger}_{j}a^{\dagger}_i = 0\]
+  \[a_{i}a^{\dagger}_j + a^{\dagger}_{j}a_i = \delta_{ij}\]
+
+\newcommand{\sumi}[2]{\sum\limits_{#1}^{#2}}
+
+\[|\alpha|^2 + |\beta|^2 = 1\]
+
+\newpage
+\[
+\begin{align*}
+   \ket{\psi_1} = \alpha\ket{0} + \beta\ket{1} \\
+   \ket{\psi_2} = \alpha\ket{00} + \beta\ket{1} + \gamma\ket{10} + \delta\ket{11} \\
+   &\vdots\\
+   \ket{\psi_n} = \sumi{i=1}{2^n}\, \alpha_i\ket{a_i^1a_i^2\cdots a_i^n}
+\end{align*}
+\]
+
+\[\ket{\psi_1} = \alpha\ket{0} + \beta\ket{1}\]
+\[\ket{\psi_2} = \alpha\ket{00} + \beta\ket{01} + \gamma\ket{10} + \delta\ket{11}\]
+\[\vdots \]
+\[\ket{\psi_n} = \sumi{i=1}{2^n}\, \alpha_i\ket{a_i^1a_i^2\cdots a_i^n}\]
+\newpage
+
+\[a^{\dagger}\ket{0} = \ket{1}\]
+\[a\ket{1} = \ket{0}\]
+
+\textbf{\textit{What about phase estimation?}}
+
+Quantum Phase Estimation is a very popular quantum algorithm which seems
+naturally suited for this task. By computing the phase of the eigenvalue, it
+finds the eigenvalue of the hamiltonian. However, it requires too many gates
+and is very costly, at least for NISQ devices. So, VQE uses a much
+more feasible method called hamiltonian
+averaging procedure instead of quantum phase estimation for measurement.
+
+
+\textbf{\textit{Where does the qubit hamiltonian come from?}}
+
+First, using trotterization, we decompose the hamiltonian of the large system
+into a sum of local hamiltonians that act only on subsets of the system. Now
+these local hamiltonians are still made up of creation and annhilation operators.
+Converting them to pauli matrices, we have
+\[H = \sum_i h_iO_i\]
+where \(O\) is the tensor product of pauli matrices. And thus we have our
+qubit hamiltonian.
+
+\textbf{\textit{How do we measure the energy?}}
+
+For every local hamiltonian, we have to run the whole quantum program multiple
+times to obtain the expectation value \(\expval{O_i}\). When this is done
+for all local hamiltonians, the total energy is computed as a weighted sum of these
+expectation values.
+\[E = \sum_i^{M} h_i \expval{O_i}\]
+
+\end{document}
