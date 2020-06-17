@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1592244927 "JournalTwo.tex" "JournalTwo.pdf" "JournalTwo" 1592244931
-  "JournalTwo.aux" 1592244930 397 d58fd7c28f4625fdefb94219d6b165c9 "pdflatex"
-  "JournalTwo.tex" 1592244925 5175 9a63874a155c16bbe567ce0958c6f0ba ""
+["pdflatex"] 1592326846 "JournalTwo.tex" "JournalTwo.pdf" "JournalTwo" 1592326851
+  "JournalTwo.aux" 1592326851 397 d58fd7c28f4625fdefb94219d6b165c9 "pdflatex"
+  "JournalTwo.tex" 1592326843 5496 2675f2729764312924c26598d95d2b51 ""
   "c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1577053468 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1577051057 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1577051057 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -35,10 +35,9 @@
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1577051057 35752 024fb6c41858982481f6968b5fc26508 ""
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1577051057 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1577051057 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
-  "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1577051057 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1577051057 32762 7fee39e011c23b3589931effd97b9702 ""
-  "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1577051057 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1577051057 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1577051057 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1577055459 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "c:/texlive/2019/texmf-dist/tex/generic/unicode-data/UnicodeData.txt" 1577058345 1797778 755f6af699f8c8d2d958da411f78f6c6 ""
   "c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty" 1577051057 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
@@ -82,5 +81,5 @@
   "nul" 0 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "JournalTwo.log"
-  "JournalTwo.aux"
   "JournalTwo.pdf"
+  "JournalTwo.aux"

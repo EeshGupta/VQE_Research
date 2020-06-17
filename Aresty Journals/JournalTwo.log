@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.22)  15 JUN 2020 14:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.22)  16 JUN 2020 13:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -386,23 +386,21 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 16
 (c:/texlive/2019/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
-6.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
+4.
 
 (c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
 <img/JournalTwo-c8f6d4a9.png, id=1, 2107.875pt x 1580.90625pt>
 File: img/JournalTwo-c8f6d4a9.png Graphic file (type png)
 <use img/JournalTwo-c8f6d4a9.png>
-Package pdftex.def Info: img/JournalTwo-c8f6d4a9.png  used on input line 43.
+Package pdftex.def Info: img/JournalTwo-c8f6d4a9.png  used on input line 40.
 (pdftex.def)             Requested size: 345.0pt x 258.73961pt.
 
-Overfull \hbox (1.9479pt too wide) in paragraph at lines 48--56
+Overfull \hbox (1.9479pt too wide) in paragraph at lines 45--53
 []\OT1/cmr/bx/it/10 Dealing with Dis-trac-tions\OT1/cmr/m/n/10 : I miss Li-brar
 y of Sci-ence and Medicine,
  []
@@ -416,7 +414,7 @@ Overfull \hbox (0.90762pt too wide) in paragraph at lines 80--87
  []
 
 [2 <./img/JournalTwo-c8f6d4a9.png>]
-<img/JournalTwo-f5cc5222.png, id=20, 724.7075pt x 461.725pt>
+<img/JournalTwo-f5cc5222.png, id=19, 724.7075pt x 461.725pt>
 File: img/JournalTwo-f5cc5222.png Graphic file (type png)
 <use img/JournalTwo-f5cc5222.png>
 Package pdftex.def Info: img/JournalTwo-f5cc5222.png  used on input line 98.
@@ -424,27 +422,26 @@ Package pdftex.def Info: img/JournalTwo-f5cc5222.png  used on input line 98.
  [3 <./img/JournalTwo-f5cc5222.png>]
 (./JournalTwo.aux) ) 
 Here is how much of TeX's memory you used:
- 13468 strings out of 492163
- 242955 string characters out of 6129075
- 286872 words of memory out of 5000000
- 17782 multiletter control sequences out of 15000+600000
- 542395 words of font info for 66 fonts, out of 8000000 for 9000
+ 13460 strings out of 492163
+ 242817 string characters out of 6129075
+ 286871 words of memory out of 5000000
+ 17774 multiletter control sequences out of 15000+600000
+ 540983 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,7n,71p,336b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,6n,71p,336b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.
 pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/t
 exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/201
 9/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b>
-Output written on JournalTwo.pdf (3 pages, 4571486 bytes).
+ype1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti10.pfb>
+Output written on JournalTwo.pdf (3 pages, 4561132 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
