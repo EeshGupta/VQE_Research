@@ -16,7 +16,7 @@ reduced.
 
 ### What is my hypothesis?
 
-Using a neural network  as opposed to Hamiltonian Averaging on optimized circuit in VQE will improve precision and accuracy of energy estimates
+Verifying whether using a neural network  as opposed to Hamiltonian Averaging on optimized circuit in VQE will improve precision and accuracy of energy estimates
 
 ## Results
 
@@ -31,3 +31,6 @@ Using a neural network  as opposed to Hamiltonian Averaging on optimized circuit
 ### Why does it make a difference
 
 ### What did I learn?
+
+## References
+Torlai, Giacomo et al. “Precise Measurement of Quantum Observables with Neural-Network Estimators.” Physical Review Research 2.2 (2020): n. pag. Crossref. Web.
