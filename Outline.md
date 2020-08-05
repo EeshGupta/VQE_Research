@@ -32,5 +32,10 @@ Verifying whether using a neural network  as opposed to Hamiltonian Averaging on
 
 ### What did I learn?
 
+## Updates 
+August 5, 2020: Familiar with dataset, information stored in visible layer, cost function. Emailed questions to Roger and Torlai on 
+how multiple local hamiltonians can be measured, how to get P(x). BTW, events whose probabilities NN will calculate on 2 qubit device 
+are 00,01,11,10 in th ZZ basis.
+
 ## References
 Torlai, Giacomo et al. “Precise Measurement of Quantum Observables with Neural-Network Estimators.” Physical Review Research 2.2 (2020): n. pag. Crossref. Web.
