@@ -1,2 +1,5 @@
-\section{New Developments} \label{sec:develop}
-    \lipsum[4-5]
+\section{Fixed vs Random Identity Insertion} \label{sec:develop}
+In fixed identity insetion method (FIIM), we insert the same amount of identities after every unitary in the circuit. Hence, the number of gate in the circuit will grow as \(cN_\text{CNOT}\). However, for linear extrapolation to be valid, \(cN_\text{CNOT}\epsilon <<1\). But even for the smallest c's like \(c = 3\) in moderately deep circuits, \(3N_\text{CNOT}\epsilon >1\). Thus in general, the FIIM approach will inflate the depth of the circuit, leading to errors in extrapolation.
+Thus, He et Al came up with a sligltly better approach of varying the number of identity across all the unitaries using a poisson distribution. This means
+we generate smaller, closer to 1 stretch factors, without inflating gate count,
+leading to better ZNE
